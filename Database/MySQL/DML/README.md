@@ -24,8 +24,8 @@ VALUES ('jee-in', '1234'), ('ji-reong', '5678'), ('jing-jing', '0000');
 ```
 
 > 주의 사항
-- 컬럼 목록과 값 목록의 개수는 반드시 일치해야 합니다.
-- 컬럼의 자료형과 값의 자료형은 반드시 일치해야 합니다.
+ - 컬럼 목록과 값 목록의 개수는 반드시 일치해야 합니다.
+ - 컬럼의 자료형과 값의 자료형은 반드시 일치해야 합니다.
 
 ### 데이터 수정
 ```SQL
@@ -38,6 +38,9 @@ UPDATE users set password = '9999'
 WHERE id = 'jee-in';
 ```
 - 테이블에 있는 모든 레코드의 컬럼 값을 변경하려면 WHERE문을 생략하면 됩니다.
+```SQL
+UPDATE users set password = '9999';
+```
 
 ### 데이터 삭제
 ```SQL
@@ -50,3 +53,6 @@ DELETE FROM users
 WHERE id = 'jee-in';
 ```
 - 테이블에 있는 모든 레코드를 삭제하려면 WHERE문을 생략하면 됩니다.
+```SQL
+DELETE FROM users;
+```

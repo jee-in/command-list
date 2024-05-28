@@ -9,12 +9,6 @@ CREATE DATABASE {데이터베이스 이름};
 CREATE DATABASE project;
 ```
 
-> 데이터 베이스 이용하기
-    ```SQL
-    use {데이터베이스 이름}
-    -- 예시: use project;
-    ```
-
 ### 테이블 생성
 ```SQL
 CREATE TABLE {테이블 이름} {

@@ -2,19 +2,27 @@
 
 ### 현재 위치한 브랜치 확인
 ```Shell
-#예시: git branch
+git branch
 ```
 
 ### 브랜치 생성
 ```Shell
 git branch {생성하려는 브랜치의 이름}
+
 #예시: git branch test
 ```
 
 ### 브랜치 이동
+- 구 버전 명령어
 ```Shell
-// 구 버전 명령어) git checkout {이동하려는 브랜치의 이름}
-// 신 버전 명령어) git switch {이동하려는 브랜치의 이름}
+git checkout {이동하려는 브랜치의 이름}
+
+#예시: git checkout test
+```
+- 신 버전 명령어
+```Shell
+git switch {이동하려는 브랜치의 이름}
+
 #예시: git switch test
 ```
 
@@ -49,5 +57,4 @@ git pull {원격 저장소의 이름 또는 주소} {브랜치의 이름}
 git merge {현 브랜치에 병합하려는 브랜치의 이름}
 #예시: git merge main
 ```
-- test 브랜치에 main 브랜치를 병합하고 싶다면 `git switch test`를 입력하여 test 브랜치로 이동한 후, `git merge main`을 입력하면 됩니다.
-- main 브랜치에 test 브랜치를 병합하고 싶다면 `git switch main`을 입력하여 main 브랜치로 이동한 후, `git merge test`를 입력하면 됩니다.
+- merge를 수행한 후, push까지 수행해야 원격 저장소에도 병합이 이루어집니다.

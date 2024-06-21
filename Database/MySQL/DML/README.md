@@ -3,8 +3,8 @@
 ### 데이터 등록
 
 ```SQL
-INSERT INTO {테이블 이름}({컬럼 이름}, {컬럼 이름}, {컬럼 이름})
-VALUES ({값}, {값}, {값});
+INSERT INTO 테이블명 (컬럼명1, 컬럼명2, 컬럼명3)
+VALUES (값1, 값2, 값3);
 ```
 - 예시
 ```SQL
@@ -29,8 +29,8 @@ VALUES ('jee-in', '1234'), ('ji-reong', '5678'), ('jing-jing', '0000');
 
 ### 데이터 수정
 ```SQL
-UPDATE {테이블 이름} SET {컬럼 이름} = {수정하려는 값} 
-WHERE {조건};
+UPDATE 테이블명 SET 컬럼명 = 새로운 값
+WHERE 원하는 조건식;
 ```
 - 예시
 ```SQL
@@ -44,8 +44,8 @@ UPDATE users set password = '9999';
 
 ### 데이터 삭제
 ```SQL
-DELETE FROM {테이블 이름}
-WHERE {조건};
+DELETE FROM 테이블명
+WHERE 원하는 조건식;
 ```
 - 예시
 ```SQL
